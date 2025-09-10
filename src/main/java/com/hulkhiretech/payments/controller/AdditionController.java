@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class AdditionController {
 	
-	private Logger logger = LoggerFactory.getLogger(AdditionController.class);
+	private final Logger logger = LoggerFactory.getLogger(AdditionController.class);
 	
     @GetMapping("/add")
     public int add(@RequestParam int num1, @RequestParam int num2) {
